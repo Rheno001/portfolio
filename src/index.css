@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+body{
+    font-family: 'Noto Serif KR', serif;
+}
+h2{
+    font-family: 'Anton', sans-serif;
+}
+
+.footerbg{
+    background-image: url('./assets/footerbg.png');
+    background-color: #54625A;
+}
+#about{
+    background-image: url('./assets/lightbg.png');
+}
