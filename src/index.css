@@ -14,3 +14,8 @@ h2{
 #about{
     background-image: url('./assets/lightbg.png');
 }
+#works{
+    background-image: url('./assets/footerbg.png');
+    background-color: #54625A;
+
+}
