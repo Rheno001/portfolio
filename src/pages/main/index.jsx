@@ -4,6 +4,7 @@ import Player from '../../components/player.jsx'
 import Footer from '../../components/footer.jsx'
 import aboutme from '../../assets/aboutme.png'
 import knowme from '../../assets/Knowme.png'
+import experience from '../../assets/experience.png'
 import topalbums from '../../assets/topalbums.png'
 
 function Index() {
@@ -56,6 +57,10 @@ function Index() {
         <img src={topalbums} alt="top albums header" className='mt-[30px] md:mt-[60px]' />
         </div>
         <Player/>
+
+        <div className='px-4 sm:px-6 lg:px-8'>
+          <img src={experience} alt="Work experience" className='mt-[30px] md:mt-[60px]'/>
+        </div>
       </section>
       <Footer/>
     </div>
