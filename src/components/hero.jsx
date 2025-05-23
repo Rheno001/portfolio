@@ -1,35 +1,34 @@
 import { useEffect, useState } from 'react';
+import status from '../assets/status.png'
+import frontend from '../assets/frontend.png'
 import reno from '../assets/reno.png';
+import moi from '../assets/moi.png'
+import oldLaptop from '../assets/old-laptop.png'
 
 function Hero() {
-  const [offsetY, setOffsetY] = useState(0);
+  const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => setOffsetY(window.scrollY);
-    window.addEventListener('scroll', handleScroll);
-
-    return () => window.removeEventListener('scroll', handleScroll);
+    setIsLoaded(true);
   }, []);
 
   return (
-    <div className="text-center py-20 relative overflow-hidden">
-      {/* Main Text */}
-      <h1 className="text-[80px] font-extrabold leading-none text-[#3d4b44]">
-        RENFRED <br /> RUBEI
-      </h1>
-
-      {/* Parallax Image */}
-      <img
-        src={reno}
-        alt="Retro Computer"
-        className="w-32 md:w-40 absolute top-[115px] right-[80px] md:right-[160px] transform transition-transform duration-100"
-        style={{ transform: `translateY(${offsetY * 0.3}px)` }}
-      />
-
-      {/* Subheading */}
-      <p className="mt-6 text-lg text-gray-700 font-serif">
-        A Front-End Developer With A Structured Mind
-      </p>
+    <div className='pb-[100px] pt-[100px]'>
+      <div className='px-4 sm:px-6 lg:px-17 mt-[10px]'>
+        <p className='flex items-center justify-end text-[20px] text-[#A2A3A3]'>Status: <img src={status} alt="" className='h-[37px] w-[37px] ml-[10px]'/>Open to Works</p>
+      </div>
+      <div className='flex flex-col items-center justify-center mt-[60px] relative'>
+        <img src={moi} alt="Developers name" className='relative'/>
+        <img 
+          src={oldLaptop} 
+          alt="Old Computer" 
+          className={`absolute bottom-[-20%] right-[10%] w-[350px] z-10 transform transition-transform duration-1000 ${isLoaded ? 'translate-x-0' : 'translate-x-full'}`}
+        />
+      </div>
+      <p className='text-start flex px-4 sm:px-6 lg:px-31 text-[30px] text-[#54625A] mt-[10px]'>A Front-End Developer with a Structured Mind</p>
+      <div>
+        <img src={frontend} alt="" className='mt-[100px]'/>
+      </div>
     </div>
   );
 }

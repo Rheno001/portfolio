@@ -7,7 +7,7 @@ import rightarrow from '../assets/rightarrow.png'
 
 function footer() {
   return (
-    <div className='footerbg pt-[50px] pb-[30px] px-4 sm:px-6 lg:px-8'>
+    <div className='footerbg pt-[50px] pb-[30px] px-4 sm:px-6 lg:px-17'>
         <div>
            <img src={text} alt="Footer text" />
         </div>

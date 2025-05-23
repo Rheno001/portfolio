@@ -55,7 +55,7 @@ function Index() {
       </section>
 
       <section id="works" className="py-[30px]">
-        <div className="px-4 sm:px-6 lg:px-8">
+        <div className="px-4 sm:px-6 lg:px-17">
           <img src={skilled} alt="Skilled In" />
           <div className="frontend">
             <p className="text-[#EDFFFA] text-[15px] md:text-[20px] text-center mt-[30px] md:mt-[40px]">
@@ -104,14 +104,14 @@ function Index() {
           </p>
         </div>
 
-        <div className="px-4 sm:px-6 lg:px-8 py-[30px] mt-[30px] md:mt-[100px]">
+        <div className="px-4 sm:px-6 lg:px-17 py-[30px] mt-[30px] md:mt-[100px]">
           <img src={projects} alt="projects" />
           <Projects />
         </div>
       </section>
 
       <section id="about" className="py-[30px]">
-        <div className="px-4 sm:px-6 lg:px-8">
+        <div className="px-4 sm:px-6 lg:px-17">
           <img
             ref={imageRef}
             src={aboutme}
@@ -146,7 +146,7 @@ function Index() {
         <Player />
 
         {/*Experience section*/}
-        <div className="px-4 sm:px-6 lg:px-8">
+        <div className="px-4 sm:px-6 lg:px-17">
           <img
             src={experience}
             alt="Work experience"

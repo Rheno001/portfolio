@@ -48,7 +48,7 @@ function Player() {
   return (
     <>
       <div
-        className="p-4 sm:px-6 lg:px-8 space-y-4 mt-[20px] md:mt-[30px] flex items-center justify-center gap-4"
+        className="p-4 sm:px-6 lg:px-17 space-y-4 mt-[20px] md:mt-[30px] flex items-center justify-center gap-4"
         style={{
           backgroundImage: `url(${albumBg})`,
           backgroundSize: 'cover',
@@ -69,10 +69,10 @@ function Player() {
         <audio ref={audioRefs.song5} src="/Seyi-Vibez-Pressure.mp3" />
       </div>
 
-      <div className="px-4 sm:px-6 lg:px-8 flex text-left text-[#54625A] mt-4 text-[20px] font-normal">
+      <div className="px-4 sm:px-6 lg:px-17 flex text-left text-[#54625A] mt-4 text-[20px] font-normal">
         Currently playing: <span className="font-semibold ml-[5px]">{getCurrentFileName()}</span><img src={headphones} className='w-[30px] ml-[20px]' alt="Headphones icon" />
       </div>
-      <div className='px-4 sm:px-6 lg:px-8 flex items-center justify-end text-[#54625A] mt-4 text-[20px] font-normal'>
+      <div className='px-4 sm:px-6 lg:px-17 flex items-center justify-end text-[#54625A] mt-4 text-[20px] font-normal'>
         <a href="https://open.spotify.com/playlist/7HpRkDGgdyu5GHF1XicAl1?si=79100b2392874846" className='hover:scale-110 transition-all'>My Favourite Playlist</a>
       </div>
     </>
