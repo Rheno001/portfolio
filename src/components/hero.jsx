@@ -13,7 +13,7 @@ function Hero() {
   }, []);
 
   return (
-    <div className='pb-[100px] pt-[100px]'>
+    <div className={`pb-[100px] pt-[100px] transform transition-all duration-1000 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
       <div className='px-4 sm:px-6 lg:px-17 mt-[10px]'>
         <p className='flex items-center justify-end text-[20px] text-[#A2A3A3]'>Status: <img src={status} alt="" className='h-[37px] w-[37px] ml-[10px]'/>Open to Works</p>
       </div>
