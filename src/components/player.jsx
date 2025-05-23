@@ -62,9 +62,9 @@ function Player() {
         <img src={song5Img} alt="Play Song 5" onClick={() => toggleAudio('song5')} className="w-[223px] hover:scale-110 transition-all cursor-pointer" />
 
         {/* Audio elements */}
-        <audio ref={audioRefs.song1} src="/J-Cole-Pride-is-the-devil.mp3" />
-        <audio ref={audioRefs.song2} src="/zizo-Seyi-Vibez-Pressure.mp3" />
-        <audio ref={audioRefs.song3} src="/zizo-Seyi-Vibez-Pressure.mp3" />
+        <audio ref={audioRefs.song1} src="/Amine-Vacay.mp3" />
+        <audio ref={audioRefs.song2} src="/Seyi-Vibez-Pressure.mp3" />
+        <audio ref={audioRefs.song3} src="/Let-It-All-Work-Out.mp3" />
         <audio ref={audioRefs.song4} src="/zizo-Seyi-Vibez-Pressure.mp3" />
         <audio ref={audioRefs.song5} src="/zizo-Seyi-Vibez-Pressure.mp3" />
       </div>

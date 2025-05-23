@@ -15,6 +15,7 @@ import vs from '../../assets/vs.png'
 import tw from '../../assets/tw.png'
 import osint from '../../assets/osint.png'
 import projects from '../../assets/projects.png'
+import Projects from '../../components/projects.jsx'
 
 function Index() {
   const imageRef = useRef(null);
@@ -65,7 +66,7 @@ function Index() {
               <li><img src={tw} alt="tailwind logo" /></li>
              </ul>
           </div>
-          <div className='ceybersecurity'>
+          <div className='cybersecurity'>
              <p className='text-[#EDFFFA] text-[15px] md:text-[20px] text-center mt-[30px] md:mt-[40px]'>Cyber Security Stack</p>
               <ul className='flex items-center justify-center mt-[30px] gap-4'>
                <li><img src={osint} alt="html logo" /></li>
@@ -76,8 +77,9 @@ function Index() {
           <p className='text-center text-[#EDFFFA] bg-[#28312c] p-0 text-[15px] md:text-[20px] w-[70%] mx-auto mt-[30px] md:mt-[40px]'>Exploring the intersection of front-end development and cybersecurity. Designing with security in mind</p>
         </div>
 
-        <div className='px-4 sm:px-6 lg:px-8 mt-[30px] md:mt-[100px]'>
+        <div className='px-4 sm:px-6 lg:px-8 py-[30px] mt-[30px] md:mt-[100px]'>
           <img src={projects} alt="projects" />
+          <Projects/>
         </div>
       </section>
 
