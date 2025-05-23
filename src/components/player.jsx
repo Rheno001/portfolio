@@ -65,8 +65,8 @@ function Player() {
         <audio ref={audioRefs.song1} src="/Amine-Vacay.mp3" />
         <audio ref={audioRefs.song2} src="/Seyi-Vibez-Pressure.mp3" />
         <audio ref={audioRefs.song3} src="/Let-It-All-Work-Out.mp3" />
-        <audio ref={audioRefs.song4} src="/zizo-Seyi-Vibez-Pressure.mp3" />
-        <audio ref={audioRefs.song5} src="/zizo-Seyi-Vibez-Pressure.mp3" />
+        <audio ref={audioRefs.song4} src="/Seyi-Vibez-Pressure.mp3" />
+        <audio ref={audioRefs.song5} src="/Seyi-Vibez-Pressure.mp3" />
       </div>
 
       <div className="px-4 sm:px-6 lg:px-8 flex text-left text-[#54625A] mt-4 text-[20px] font-normal">
