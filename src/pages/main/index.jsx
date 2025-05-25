@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import Navbar from "../../components/navbar.jsx";
-import Hero from "../../components/hero.jsx"
+import Hero from "../../components/hero.jsx";
 import Player from "../../components/player.jsx";
 import Footer from "../../components/footer.jsx";
 import aboutme from "../../assets/aboutme.png";
@@ -51,7 +51,7 @@ function Index() {
     <div>
       <Navbar />
       <section id="hero">
-       <Hero/>
+        <Hero />
       </section>
 
       <section id="works" className="py-[30px]">
@@ -98,23 +98,23 @@ function Index() {
               </li>
             </ul>
           </div>
-          <p className="text-center text-[#EDFFFA] text-[20px] font-serif px-4 leading-relaxed relative mt-[50px]">
-             <span className="relative z-10">
-                Exploring The Intersection Of Front-End Development And Cybersecurity. Designing
-             </span>
-        <span className="absolute inset-0 z-0">
-          <span className="block w-[60%] h-[60%] bg-[#242e29] absolute left-[20%] bottom-[0.1em] rounded-sm"></span>
-        </span>
-      </p>
-      <p className="text-center text-[#EDFFFA] text-[20px] font-serif px-4 leading-relaxed relative">
-             <span className="relative z-10">
-                With Security In Mind
-             </span>
-        <span className="absolute inset-0 z-0">
-          <span className="block w-[15%] h-[60%] bg-[#242e29] absolute left-[42.5%] bottom-[0.1em] rounded-sm"></span>
-        </span>
-      </p>
-         
+          <div className="little">
+            <p className="text-center text-[#EDFFFA] text-[15px] sm:text-[18px] md:text-[20px] font-serif px-2 sm:px-4 leading-relaxed relative mt-[30px] sm:mt-[40px] md:mt-[50px]">
+              <span className="relative z-10">
+                Exploring The Intersection Of Front-End Development And
+                Cybersecurity. Designing
+              </span>
+              <span className="absolute inset-0 z-0">
+                <span className="block w-[80%] sm:w-[70%] md:w-[60%] h-[60%] bg-[#242e29] absolute left-[10%] sm:left-[15%] md:left-[20%] bottom-[0.1em] rounded-sm"></span>
+              </span>
+            </p>
+            <p className="text-center text-[#EDFFFA] text-[15px] sm:text-[18px] md:text-[20px] font-serif px-2 sm:px-4 leading-relaxed relative">
+              <span className="relative z-10">With Security In Mind</span>
+              <span className="absolute inset-0 z-0">
+                <span className="block w-[25%] sm:w-[20%] md:w-[15%] h-[60%] bg-[#242e29] absolute left-[37.5%] sm:left-[40%] md:left-[42.5%] bottom-[0.1em] rounded-sm"></span>
+              </span>
+            </p>
+          </div>
         </div>
 
         <div className="px-4 sm:px-6 lg:px-17 py-[30px] mt-[30px] md:mt-[100px]">
@@ -182,12 +182,16 @@ function Index() {
                   <img src={work} alt="First experience" />
                 </div>
                 <div className="text-[#3B4542] ml-[25px]">
-                  <h3 className="text-[30px]">Front End Intern @ NHUB Nigeria</h3>
+                  <h3 className="text-[30px]">
+                    Front End Intern @ NHUB Nigeria
+                  </h3>
                   <p className="text-[20px]">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Iusto, temporibus.
                   </p>
-                  <p className="text-[15px]">14th September 2019 - 20th Febraury 2022</p>
+                  <p className="text-[15px]">
+                    14th September 2019 - 20th Febraury 2022
+                  </p>
                 </div>
               </div>
               <div className="second flex items-center absolute top-[58%]">
@@ -195,12 +199,16 @@ function Index() {
                   <img src={work} alt="First experience" />
                 </div>
                 <div className="text-[#3B4542] ml-[25px]">
-                  <h3 className="text-[30px]">Front End Intern @ NHUB Nigeria</h3>
+                  <h3 className="text-[30px]">
+                    Front End Intern @ NHUB Nigeria
+                  </h3>
                   <p className="text-[20px]">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Iusto, temporibus.
                   </p>
-                  <p className="text-[15px]">14th September 2019 - 20th Febraury 2022</p>
+                  <p className="text-[15px]">
+                    14th September 2019 - 20th Febraury 2022
+                  </p>
                 </div>
               </div>
             </div>
