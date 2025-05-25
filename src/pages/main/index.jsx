@@ -98,10 +98,23 @@ function Index() {
               </li>
             </ul>
           </div>
-          <p className="text-center text-[#EDFFFA] bg-[#28312c] p-0 text-[15px] md:text-[20px] w-[70%] mx-auto mt-[30px] md:mt-[40px]">
-            Exploring the intersection of front-end development and
-            cybersecurity. Designing with security in mind
-          </p>
+          <p className="text-center text-[#EDFFFA] text-[20px] font-serif px-4 leading-relaxed relative mt-[50px]">
+             <span className="relative z-10">
+                Exploring The Intersection Of Front-End Development And Cybersecurity. Designing
+             </span>
+        <span className="absolute inset-0 z-0">
+          <span className="block w-[60%] h-[60%] bg-[#242e29] absolute left-[20%] bottom-[0.1em] rounded-sm"></span>
+        </span>
+      </p>
+      <p className="text-center text-[#EDFFFA] text-[20px] font-serif px-4 leading-relaxed relative">
+             <span className="relative z-10">
+                With Security In Mind
+             </span>
+        <span className="absolute inset-0 z-0">
+          <span className="block w-[15%] h-[60%] bg-[#242e29] absolute left-[42.5%] bottom-[0.1em] rounded-sm"></span>
+        </span>
+      </p>
+         
         </div>
 
         <div className="px-4 sm:px-6 lg:px-17 py-[30px] mt-[30px] md:mt-[100px]">
