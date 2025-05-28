@@ -159,7 +159,7 @@ function Index() {
         <Player />
 
         {/*Experience section*/}
-        <div className="px-4 sm:px-6 lg:px-17">
+        <section className="experience px-4 sm:px-6 lg:px-17">
           <img
             src={experience}
             alt="Work experience"
@@ -213,7 +213,7 @@ function Index() {
               </div>
             </div>
           </div>
-        </div>
+        </section>
       </section>
       <Footer />
     </div>
