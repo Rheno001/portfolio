@@ -58,48 +58,48 @@ function Index() {
         <div className="px-4 sm:px-6 lg:px-17">
           <img src={skilled} alt="Skilled In" />
           <div className="frontend">
-            <p className="text-[#EDFFFA] text-[15px] md:text-[20px] text-center mt-[30px] md:mt-[40px]">
+            <p className="text-[#EDFFFA] text-[20px] md:text-[20px] text-center mt-[30px] md:mt-[40px]">
               Front-End Development Stack
             </p>
-            <ul className="flex items-center justify-center mt-[30px] gap-4">
+            <ul className="flex items-center justify-center mt-[10px] md:mt-[30px] gap-4">
               <li>
-                <img src={html} alt="html logo" />
+                <img src={html} alt="html logo" className="w-[85px] md:w-auto" />
               </li>
               <li>
-                <img src={css} alt="css logo" />
+                <img src={css} alt="css logo" className="w-[85px] md:w-auto" />
               </li>
               <li>
-                <img src={git} alt="git logo" />
+                <img src={git} alt="git logo" className="w-[85px] md:w-auto" />
               </li>
               <li>
-                <img src={wp} alt="wordpress logo" />
+                <img src={wp} alt="wordpress logo" className="w-[85px] md:w-auto" />
               </li>
               <li>
-                <img src={vs} alt="vs code logo" />
+                <img src={vs} alt="vs code logo" className="w-[85px] md:w-auto" />
               </li>
               <li>
-                <img src={tw} alt="tailwind logo" />
+                <img src={tw} alt="tailwind logo" className="w-[85px] md:w-auto" />
               </li>
             </ul>
           </div>
           <div className="cybersecurity">
-            <p className="text-[#EDFFFA] text-[15px] md:text-[20px] text-center mt-[30px] md:mt-[40px]">
+            <p className="text-[#EDFFFA] text-[20px] md:text-[20px] text-center mt-[30px] md:mt-[40px]">
               Cyber Security Stack
             </p>
-            <ul className="flex items-center justify-center mt-[30px] gap-4">
+            <ul className="flex items-center justify-center mt-[10px] md:mt-[30px] gap-4">
               <li>
-                <img src={osint} alt="html logo" />
+                <img src={osint} alt="html logo" className="w-[80px] md:w-auto" />
               </li>
               <li>
-                <img src={css} alt="css logo" />
+                <img src={css} alt="css logo" className="w-[80px] md:w-auto" />
               </li>
               <li>
-                <img src={git} alt="git logo" />
+                <img src={git} alt="git logo" className="w-[80px] md:w-auto" />
               </li>
             </ul>
           </div>
           <div className="little">
-            <p className="text-center text-[#EDFFFA] text-[15px] sm:text-[18px] md:text-[20px] font-serif px-2 sm:px-4 leading-relaxed relative mt-[30px] sm:mt-[40px] md:mt-[50px]">
+            <p className="text-center text-[#EDFFFA] text-[9px] md:text-[15px] lg:text-[20px] font-serif px-2 sm:px-4 leading-relaxed relative mt-[30px] sm:mt-[40px] md:mt-[50px]">
               <span className="relative z-10">
                 Exploring The Intersection Of Front-End Development And
                 Cybersecurity. Designing
@@ -108,7 +108,7 @@ function Index() {
                 <span className="block w-[80%] sm:w-[70%] md:w-[60%] h-[60%] bg-[#242e29] absolute left-[10%] sm:left-[15%] md:left-[20%] bottom-[0.1em] rounded-sm"></span>
               </span>
             </p>
-            <p className="text-center text-[#EDFFFA] text-[15px] sm:text-[18px] md:text-[20px] font-serif px-2 sm:px-4 leading-relaxed relative">
+            <p className="text-center text-[#EDFFFA] text-[9px] md:text-[15px] lg:text-[20px] font-serif px-2 sm:px-4 leading-relaxed relative">
               <span className="relative z-10">With Security In Mind</span>
               <span className="absolute inset-0 z-0">
                 <span className="block w-[25%] sm:w-[20%] md:w-[15%] h-[60%] bg-[#242e29] absolute left-[37.5%] sm:left-[40%] md:left-[42.5%] bottom-[0.1em] rounded-sm"></span>

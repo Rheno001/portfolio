@@ -3,6 +3,15 @@
 body{
     font-family: 'Nanum Myeongjo', serif;
 }
+@font-face {
+  font-family: 'Integral CF Heavy';
+  src: url('/fonts/IntegralCF-Heavy.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}
+.integral-font {
+  font-family: 'Integral CF Heavy', sans-serif;
+}
 h2{
     font-family: 'Anton', sans-serif;
 }
