@@ -88,13 +88,13 @@ function Index() {
             </p>
             <ul className="flex items-center justify-center mt-[10px] md:mt-[30px] gap-4">
               <li>
-                <img src={osint} alt="html logo" className="w-[80px] md:w-auto" />
+                <img src={osint} alt="html logo" className="w-[60px] md:w-auto" />
               </li>
               <li>
-                <img src={css} alt="css logo" className="w-[80px] md:w-auto" />
+                <img src={css} alt="css logo" className="w-[60px] md:w-auto" />
               </li>
               <li>
-                <img src={git} alt="git logo" className="w-[80px] md:w-auto" />
+                <img src={git} alt="git logo" className="w-[60px] md:w-auto" />
               </li>
             </ul>
           </div>
