@@ -33,7 +33,7 @@ function projects() {
                     <p className='text-[20px]'>Web3</p>
                 </div>
                 <div className='flex items-end'>
-                    <button className='flex p-2 items-center justify-center mr-[20px]'><a href="" className='text-[15px] text-[#EDFFFA] flex items-center'>View Site <img src={arrow} alt="right pointing arrow" className='w-[14.67px] h-[11px] ml-[15px]'/></a></button>
+                    <button className='flex p-2 items-center justify-center mr-[20px]'><a href="https://mintnft-vert.vercel.app/" className='text-[15px] text-[#EDFFFA] flex items-center'>View Site <img src={arrow} alt="right pointing arrow" className='w-[14.67px] h-[11px] ml-[15px]'/></a></button>
                     <a href="" className='border-[2px] border-[#EDFFFA] p-2 text-[12px] md:text-[15px] text-[#EDFFFA]'>Read Case Study</a>
                 </div>
             </div>
@@ -48,7 +48,7 @@ function projects() {
                     <p className='text-[20px]'>Web3</p>
                 </div>
                 <div className='flex items-end'>
-                    <button className='flex p-2 items-center justify-center mr-[20px]'><a href="" className='text-[15px] text-[#EDFFFA] flex items-center'>View Site <img src={arrow} alt="right pointing arrow" className='w-[14.67px] h-[11px] ml-[15px]'/></a></button>
+                    <button className='flex p-2 items-center justify-center mr-[20px]'><a href="https://telgram-great-minds.vercel.app/" className='text-[15px] text-[#EDFFFA] flex items-center'>View Site <img src={arrow} alt="right pointing arrow" className='w-[14.67px] h-[11px] ml-[15px]'/></a></button>
                     <a href="" className='border-[2px] border-[#EDFFFA] p-2 text-[12px] md:text-[15px] text-[#EDFFFA]'>Read Case Study</a>
                 </div>
             </div>
