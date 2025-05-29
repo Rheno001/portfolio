@@ -14,7 +14,7 @@ function projects() {
             </div>
             <div className='texts flex justify-between'>
                 <div className='text-[#EDFFFA]'>
-                    <h3 className='text-[25px] md:text-[45px]'>Mixbistro</h3>
+                    <h3 className='text-[25px] lg:text-[45px]'>Mixbistro</h3>
                     <p className='text-[15px] md:text-[20px]'>Restaurant</p>
                 </div>
                 <div className='flex items-end'>
@@ -29,7 +29,7 @@ function projects() {
             </div>
             <div className='texts flex justify-between'>
                 <div className='text-[#EDFFFA]'>
-                    <h3 className='text-[25px] md:text-[45px]'>MintNFT</h3>
+                    <h3 className='text-[25px] lg:text-[45px]'>MintNFT</h3>
                     <p className='text-[15px] md:text-[20px]'>Web3</p>
                 </div>
                 <div className='flex items-end'>
@@ -44,7 +44,7 @@ function projects() {
             </div>
             <div className='texts flex justify-between'>
                 <div className='text-[#EDFFFA]'>
-                    <h3 className='text-[25px] md:text-[45px]'>$TGM</h3>
+                    <h3 className='text-[25px] lg:text-[45px]'>$TGM</h3>
                     <p className='text-[15px] md:text-[20px]'>Web3</p>
                 </div>
                 <div className='flex items-end'>
@@ -59,7 +59,7 @@ function projects() {
             </div>
             <div className='texts flex justify-between'>
                 <div className='text-[#EDFFFA]'>
-                    <h3 className='text-[25px] md:text-[45px]'>Saasify</h3>
+                    <h3 className='text-[25px] lg:text-[45px]'>Saasify</h3>
                     <p className='text-[15px] md:text-[20px]'>SAAS</p>
                 </div>
                 <div className='flex items-end'>
