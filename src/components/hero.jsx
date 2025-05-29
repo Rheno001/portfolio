@@ -35,7 +35,7 @@ function Hero() {
             REUBEN
           </h1>
         </div>
-        <div className="mob w-full ml-[15px]">
+        <div className="mob w-full ml-[15px] overflow-clip">
           <h1 className="block md:hidden integral-font text-[#54625A] text-[30vw] font-black relative leading-24 mx-auto">
             RENF <br />
             RED -
