@@ -34,3 +34,8 @@ h2{
 .custom-untight {
   letter-spacing: 0.1px;
 }
+
+ @keyframes scroll {
+        0% { transform: translateX(0%); }
+        100% { transform: translateX(-100%); }
+      }

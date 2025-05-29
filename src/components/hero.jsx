@@ -1,9 +1,9 @@
-import { useEffect, useState } from 'react';
-import status from '../assets/status.png'
-import frontend from '../assets/frontend.png'
-import reno from '../assets/reno.png';
-import moi from '../assets/moi.png'
-import oldLaptop from '../assets/old-laptop.png'
+import { useEffect, useState } from "react";
+import status from "../assets/status.png";
+import frontend from "../assets/frontend.png";
+import reno from "../assets/reno.png";
+import moi from "../assets/moi.png";
+import oldLaptop from "../assets/old-laptop.png";
 
 function Hero() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -13,29 +13,68 @@ function Hero() {
   }, []);
 
   return (
-    <div className={`pb-[20px] md:pb-[100px] pt-[100px] transform transition-all duration-1000 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-      <div className='px-4 sm:px-6 lg:px-17 mt-[10px]'>
-        <p className='flex items-center justify-end text-[20px] text-[#A2A3A3]'>Status: <img src={status} alt="" className='h-[37px] w-[37px] ml-[10px]'/>Open to Works</p>
+    <div
+      className={`pb-[20px] md:pb-[100px] pt-[100px] transform transition-all duration-1000 ease-out ${
+        isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+      }`}
+    >
+      <div className="px-4 sm:px-6 lg:px-17 mt-[10px]">
+        <p className="flex items-center justify-end text-[20px] text-[#A2A3A3]">
+          Status:{" "}
+          <img src={status} alt="" className="h-[37px] w-[37px] ml-[10px]" />
+          Open to Works
+        </p>
       </div>
-      <div className='flex flex-col items-center justify-center mt-[25px] md:mt-[60px] relative px-4 sm:px-6 lg:px-31'>
+      <div className="flex flex-col items-center justify-center mt-[25px] md:mt-[60px] relative px-4 sm:px-6 lg:px-31">
         {/*<img src={moi} alt="Developers name" className='relative'/>*/}
         <div className="desktop">
-           <h1 className='hidden md:block integral-font text-[#54625A] md:text-[160px] lg:text-[200px] font-black relative leading-40 custom-untight mx-auto'>RENFRED</h1>
-           <h1 className='hidden md:block integral-font text-[#54625A] md:text-[160px] lg:text-[240px] font-black relative leading-40 custom-tight mx-auto ml-[-3px]'>REUBEN</h1>
+          <h1 className="hidden md:block integral-font text-[#54625A] md:text-[160px] lg:text-[200px] font-black relative leading-40 custom-untight mx-auto">
+            RENFRED
+          </h1>
+          <h1 className="hidden md:block integral-font text-[#54625A] md:text-[160px] lg:text-[240px] font-black relative leading-40 custom-tight mx-auto ml-[-3px]">
+            REUBEN
+          </h1>
         </div>
         <div className="mob w-full ml-[15px]">
-          <h1 className='block md:hidden integral-font text-[#54625A] text-[30vw] font-black relative leading-24 mx-auto'>RENF <br />RED -</h1>
-          <h1 className='block md:hidden integral-font text-[#54625A] text-[40vw] font-black relative leading-32 mt-[10px] ml-[-3px] mx-auto'>REU <br />BEN</h1>
+          <h1 className="block md:hidden integral-font text-[#54625A] text-[30vw] font-black relative leading-24 mx-auto">
+            RENF <br />
+            RED -
+          </h1>
+          <h1 className="block md:hidden integral-font text-[#54625A] text-[40vw] font-black relative leading-32 mt-[10px] ml-[-3px] mx-auto">
+            REU <br />
+            BEN
+          </h1>
         </div>
-        <img 
-          src={oldLaptop} 
-          alt="Old Computer" 
-          className={`absolute md:bottom-[-20%] right-[1%] md:right-[10%] w-[220px] md:w-[350px] z-10 transform transition-transform duration-1000 ${isLoaded ? 'translate-x-0' : 'translate-x-full'}`}
+        <img
+          src={oldLaptop}
+          alt="Old Computer"
+          className={`absolute md:bottom-[-20%] right-[1%] md:right-[10%] w-[220px] md:w-[350px] z-10 transform transition-transform duration-1000 ${
+            isLoaded ? "translate-x-0" : "translate-x-full"
+          }`}
         />
       </div>
-      <p className='px-6 sm:px-6 lg:px-40 text-[20px] md:text-[30px] text-[#54625A] mt-[30px]'>A Web Developer with a Structured Mind</p>
-      <div>
-        <img src={frontend} alt="" className='mt-[20px] md:mt-[100px]'/>
+      <p className="px-6 sm:px-6 lg:px-40 text-[20px] md:text-[30px] text-[#54625A] mt-[30px]">
+        A Web Developer with a Structured Mind
+      </p>
+      <div className="relative overflow-hidden mt-[30px]">
+        {/* Infinite image slider */}
+        <div className="relative overflow-hidden mt-[30px]">
+          <div
+            className="flex gap-8 whitespace-nowrap"
+            style={{
+              animation: "scroll 20s linear infinite",
+            }}
+          >
+            {Array.from({ length: 20 }).map((_, index) => (
+              <img
+                key={index}
+                src={frontend}
+                alt="Headphones"
+                className="inline-block"
+              />
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   );
