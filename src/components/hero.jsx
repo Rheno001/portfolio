@@ -35,7 +35,7 @@ function Hero() {
             REUBEN
           </h1>
         </div>
-        <div className="mob w-full ml-[15px] overflow-clip">
+        <div className="mob w-full ml-[15px] overflow-hidden">
           <h1 className="block md:hidden integral-font text-[#54625A] text-[30vw] font-black relative leading-24 mx-auto">
             RENF <br />
             RED -
@@ -54,9 +54,9 @@ function Hero() {
         />
       </div>
       <p className="px-6 sm:px-6 lg:px-40 text-[20px] md:text-[30px] text-[#54625A] mt-[30px]">
-        A Web Developer with a Structured Mind
+        A Front-End Developer with a Structured Mind
       </p>
-      <div className="relative overflow-hidden mt-[30px]">
+      <div className="relative overflow-hidden mt-0 mb-[5px] md:mt-[30px] md:mb-0">
         {/* Infinite image slider */}
         <div className="relative overflow-hidden mt-[30px]">
           <div
@@ -69,7 +69,7 @@ function Hero() {
               <img
                 key={index}
                 src={frontend}
-                alt="Headphones"
+                alt="Frontend developer text"
                 className="inline-block"
               />
             ))}

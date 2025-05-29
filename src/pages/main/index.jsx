@@ -19,6 +19,7 @@ import projects from "../../assets/projects.png";
 import Projects from "../../components/projects.jsx";
 import work from "../../assets/work.png";
 import work1 from "../../assets/tbs.png";
+import Typing from '../../components/typing.jsx'
 
 function Index() {
   const imageRef = useRef(null);
@@ -99,23 +100,7 @@ function Index() {
               </li>
             </ul>
           </div>
-          <div className="little">
-            <p className="text-center text-[#EDFFFA] text-[8px] md:text-[15px] lg:text-[20px] font-serif px-2 sm:px-4 leading-relaxed relative mt-[30px] sm:mt-[40px] md:mt-[50px]">
-              <span className="relative z-10">
-                Exploring The Intersection Of Front-End Development And
-                Cybersecurity. Designing
-              </span>
-              <span className="absolute inset-0 z-0">
-                <span className="block w-[80%] sm:w-[70%] md:w-[60%] h-[60%] bg-[#242e29] absolute left-[10%] sm:left-[15%] md:left-[20%] bottom-[0.1em] rounded-sm"></span>
-              </span>
-            </p>
-            <p className="text-center text-[#EDFFFA] text-[8px] md:text-[15px] lg:text-[20px] font-serif px-2 sm:px-4 leading-relaxed relative">
-              <span className="relative z-10">With Security In Mind</span>
-              <span className="absolute inset-0 z-0">
-                <span className="block w-[20%] sm:w-[20%] md:w-[15%] h-[60%] bg-[#242e29] absolute left-[40%] sm:left-[40%] md:left-[42.5%] bottom-[0.1em] rounded-sm"></span>
-              </span>
-            </p>
-          </div>
+          <Typing/>
         </div>
 
         <div className="px-4 sm:px-6 lg:px-17 py-[30px] mt-[30px] md:mt-[100px]">
