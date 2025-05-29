@@ -18,6 +18,7 @@ import osint from "../../assets/osint.png";
 import projects from "../../assets/projects.png";
 import Projects from "../../components/projects.jsx";
 import work from "../../assets/work.png";
+import work1 from "../../assets/tbs.png";
 
 function Index() {
   const imageRef = useRef(null);
@@ -165,7 +166,7 @@ function Index() {
             alt="Work experience"
             className="mt-[30px] md:mt-[60px]"
           />
-          <div className="flex mx-auto relative md:w-[60%] ml-[-2px] md:ml-0">
+          <div className="flex mx-auto relative md:w-[60%] ml-[-2px] md:m-auto">
             <div className="flex justify-center items-center h-[536px] my-0 mt-[-100px] md:my-[50px]">
               <div className="relative w-1 bg-[#54625A] h-[250px] md:h-full rounded">
                 {/* Top knob */}
@@ -179,7 +180,7 @@ function Index() {
             <div className="ml-[30px]">
               <div className="first flex items-center absolute top-[14%] md:top-[16%]">
                 <div className="bg-[#EDFFFA] rounded-[24px] border-[3px] border-[#3B4542] p-[8px]">
-                  <img src={work} alt="First experience" className="w-[70px]"/>
+                  <img src={work} alt="First experience" className="w-[70px] md:w-[132px]"/>
                 </div>
                 <div className="text-[#3B4542] ml-[25px]">
                   <h3 className="text-[15px] md:text-[30px]">
@@ -196,7 +197,7 @@ function Index() {
               </div>
               <div className="second flex items-center absolute top-[43%] md:top-[58%]">
                 <div className="bg-[#EDFFFA] rounded-[24px] border-[3px] border-[#3B4542] p-[8px]">
-                  <img src={work} alt="First experience" className="w-[70px]"/>
+                  <img src={work} alt="First experience" className="w-[70px] md:w-[132px]"/>
                 </div>
                 <div className="text-[#3B4542] ml-[25px]">
                   <h3 className="text-[15px] md:text-[30px]">
