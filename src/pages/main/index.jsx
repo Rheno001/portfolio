@@ -201,14 +201,14 @@ function Index() {
                 </div>
                 <div className="text-[#3B4542] ml-[25px]">
                   <h3 className="text-[15px] md:text-[30px]">
-                    Front End Intern @ NHUB Nigeria
+                    Web Dev @ Triune Built Tech
                   </h3>
                   <p className="text-[8px] md:text-[20px]">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Iusto, temporibus.
                   </p>
                   <p className="text-[8px] md:text-[15px]">
-                    14th September 2019 - 20th Febraury 2022
+                    25th November 2024 - Till Date
                   </p>
                 </div>
               </div>
