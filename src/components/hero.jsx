@@ -23,7 +23,7 @@ function Hero() {
            <h1 className='hidden md:block integral-font text-[#54625A] md:text-[160px] lg:text-[200px] font-black relative leading-40 custom-untight mx-auto'>RENFRED</h1>
            <h1 className='hidden md:block integral-font text-[#54625A] md:text-[160px] lg:text-[240px] font-black relative leading-40 custom-tight mx-auto ml-[-3px]'>REUBEN</h1>
         </div>
-        <div className="mob w-full mx-auto">
+        <div className="mob w-full ml-[15px]">
           <h1 className='block md:hidden integral-font text-[#54625A] text-[30vw] font-black relative leading-24 mx-auto'>RENF <br />RED -</h1>
           <h1 className='block md:hidden integral-font text-[#54625A] text-[40vw] font-black relative leading-32 mt-[10px] ml-[-3px] mx-auto'>REU <br />BEN</h1>
         </div>
