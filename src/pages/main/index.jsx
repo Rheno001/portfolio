@@ -153,21 +153,21 @@ function Index() {
           <img
             src={topalbums}
             alt="top albums header"
-            className="mt-[30px] md:mt-[60px]"
+            className="mt-[30px] mb-[20px] md:mb-0 md:mt-[60px]"
           />
         </div>
         <Player />
 
         {/*Experience section*/}
-        <section className="experience px-4 sm:px-6 lg:px-17">
+        <section className="experience h-[320px] md:h-auto px-4 sm:px-6 lg:px-17">
           <img
             src={experience}
             alt="Work experience"
             className="mt-[30px] md:mt-[60px]"
           />
-          <div className="flex mx-auto relative w-[60%]">
-            <div className="flex justify-center items-center h-[536px] bg-white my-[50px]">
-              <div className="relative w-1 bg-[#54625A] h-full rounded">
+          <div className="flex mx-auto relative md:w-[60%] ml-[-2px] md:ml-0">
+            <div className="flex justify-center items-center h-[536px] my-0 mt-[-100px] md:my-[50px]">
+              <div className="relative w-1 bg-[#54625A] h-[250px] md:h-full rounded">
                 {/* Top knob */}
                 <div className="absolute top-[20%] left-1/2 -translate-x-1/2 w-6 h-6 rounded-md bg-[#edfffa] border-4 border-[#54625A]"></div>
 
@@ -177,36 +177,36 @@ function Index() {
             </div>
 
             <div className="ml-[30px]">
-              <div className="first flex items-center absolute top-[16%]">
+              <div className="first flex items-center absolute top-[14%] md:top-[16%]">
                 <div className="bg-[#EDFFFA] rounded-[24px] border-[3px] border-[#3B4542] p-[8px]">
-                  <img src={work} alt="First experience" />
+                  <img src={work} alt="First experience" className="w-[70px]"/>
                 </div>
                 <div className="text-[#3B4542] ml-[25px]">
-                  <h3 className="text-[30px]">
+                  <h3 className="text-[15px] md:text-[30px]">
                     Front End Intern @ NHUB Nigeria
                   </h3>
-                  <p className="text-[20px]">
+                  <p className="text-[8px] md:text-[20px]">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Iusto, temporibus.
                   </p>
-                  <p className="text-[15px]">
+                  <p className="text-[8px] md:text-[15px]">
                     14th September 2019 - 20th Febraury 2022
                   </p>
                 </div>
               </div>
-              <div className="second flex items-center absolute top-[58%]">
+              <div className="second flex items-center absolute top-[43%] md:top-[58%]">
                 <div className="bg-[#EDFFFA] rounded-[24px] border-[3px] border-[#3B4542] p-[8px]">
-                  <img src={work} alt="First experience" />
+                  <img src={work} alt="First experience" className="w-[70px]"/>
                 </div>
                 <div className="text-[#3B4542] ml-[25px]">
-                  <h3 className="text-[30px]">
+                  <h3 className="text-[15px] md:text-[30px]">
                     Front End Intern @ NHUB Nigeria
                   </h3>
-                  <p className="text-[20px]">
+                  <p className="text-[8px] md:text-[20px]">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Iusto, temporibus.
                   </p>
-                  <p className="text-[15px]">
+                  <p className="text-[8px] md:text-[15px]">
                     14th September 2019 - 20th Febraury 2022
                   </p>
                 </div>
