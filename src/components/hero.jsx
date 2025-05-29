@@ -20,8 +20,8 @@ function Hero() {
       <div className='flex flex-col items-center justify-center mt-[25px] md:mt-[60px] relative px-4 sm:px-6 lg:px-31'>
         {/*<img src={moi} alt="Developers name" className='relative'/>*/}
         <div className="desktop">
-           <h1 className='hidden md:block integral-font text-[#54625A] md:text-[160px] lg:text-[200px] font-black relative leading-40 custom-tight mx-auto'>RENFRED</h1>
-           <h1 className='hidden md:block integral-font text-[#54625A] md:text-[160px] lg:text-[240px] font-black relative leading-40 custom-tight mx-auto'>REUBEN</h1>
+           <h1 className='hidden md:block integral-font text-[#54625A] md:text-[160px] lg:text-[200px] font-black relative leading-40 custom-untight mx-auto'>RENFRED</h1>
+           <h1 className='hidden md:block integral-font text-[#54625A] md:text-[160px] lg:text-[240px] font-black relative leading-40 custom-tight mx-auto ml-[-3px]'>REUBEN</h1>
         </div>
         <div className="mobile w-full">
           <h1 className='block md:hidden integral-font text-[#54625A] text-[120px] font-black relative leading-25 mx-auto'>RENF <br />RED -</h1>

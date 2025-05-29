@@ -154,7 +154,7 @@ function Index() {
           <img
             src={topalbums}
             alt="top albums header"
-            className="mt-[30px] mb-[20px] lg:mb-0 md:mt-[60px]"
+            className="mt-[30px] mb-[20px] lg:mb-[50px] md:mt-[60px]"
           />
         </div>
         <Player />

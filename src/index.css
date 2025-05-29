@@ -31,3 +31,6 @@ h2{
 .custom-tight {
   letter-spacing: -13px;
 }
+.custom-untight {
+  letter-spacing: 0.1px;
+}
