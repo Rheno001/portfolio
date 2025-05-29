@@ -12,10 +12,10 @@ function projects() {
             <div className='image bg-[#DDE0DE] p-10'>
                 <img src={MIX} alt="Projects one" className='h-auto'/>
             </div>
-            <div className='texts flex justify-between'>
+            <div className='texts flex justify-between mt-[10px]'>
                 <div className='text-[#EDFFFA]'>
-                    <h3 className='text-[25px] lg:text-[45px]'>Mixbistro</h3>
-                    <p className='text-[15px] md:text-[20px]'>Restaurant</p>
+                    <h3 className='text-[20px] lg:text-[45px]'>Mixbistro</h3>
+                    <p className='text-[12px] md:text-[20px]'>Restaurant</p>
                 </div>
                 <div className='flex items-end'>
                     <button className='flex p-2 items-center justify-center mr-[20px]'><a href="" className='text-[15px] text-[#EDFFFA] flex items-center'>View Site <img src={arrow} alt="right pointing arrow" className='w-[14.67px] h-[11px] ml-[15px]'/></a></button>
@@ -27,10 +27,10 @@ function projects() {
             <div className='image bg-[#DDE0DE] p-10'>
                 <img src={NFT} alt="Projects one" />
             </div>
-            <div className='texts flex justify-between'>
+            <div className='texts flex justify-between mt-[10px]'>
                 <div className='text-[#EDFFFA]'>
-                    <h3 className='text-[25px] lg:text-[45px]'>MintNFT</h3>
-                    <p className='text-[15px] md:text-[20px]'>Web3</p>
+                    <h3 className='text-[20px] lg:text-[45px]'>MintNFT</h3>
+                    <p className='text-[12px] md:text-[20px]'>Web3</p>
                 </div>
                 <div className='flex items-end'>
                     <button className='flex p-2 items-center justify-center mr-[20px]'><a href="https://mintnft-vert.vercel.app/" className='text-[15px] text-[#EDFFFA] flex items-center'>View Site <img src={arrow} alt="right pointing arrow" className='w-[14.67px] h-[11px] ml-[15px]'/></a></button>
@@ -42,10 +42,10 @@ function projects() {
             <div className='image bg-[#DDE0DE] p-10'>
                 <img src={TGM} alt="Projects one" />
             </div>
-            <div className='texts flex justify-between'>
+            <div className='texts flex justify-between mt-[10px]'>
                 <div className='text-[#EDFFFA]'>
-                    <h3 className='text-[25px] lg:text-[45px]'>$TGM</h3>
-                    <p className='text-[15px] md:text-[20px]'>Web3</p>
+                    <h3 className='text-[20px] lg:text-[45px]'>$TGM</h3>
+                    <p className='text-[12px] md:text-[20px]'>Web3</p>
                 </div>
                 <div className='flex items-end'>
                     <button className='flex p-2 items-center justify-center mr-[20px]'><a href="https://telgram-great-minds.vercel.app/" className='text-[15px] text-[#EDFFFA] flex items-center'>View Site <img src={arrow} alt="right pointing arrow" className='w-[14.67px] h-[11px] ml-[15px]'/></a></button>
@@ -57,10 +57,10 @@ function projects() {
             <div className='image bg-[#DDE0DE] p-10'>
                 <img src={SAAS} alt="Projects one" />
             </div>
-            <div className='texts flex justify-between'>
+            <div className='texts flex justify-between mt-[10px]'>
                 <div className='text-[#EDFFFA]'>
-                    <h3 className='text-[25px] lg:text-[45px]'>Saasify</h3>
-                    <p className='text-[15px] md:text-[20px]'>SAAS</p>
+                    <h3 className='text-[20px] lg:text-[45px]'>Saasify</h3>
+                    <p className='text-[12px] md:text-[20px]'>SAAS</p>
                 </div>
                 <div className='flex items-end'>
                     <button className='flex p-2 items-center justify-center mr-[20px]'><a href="https://saasify-theta.vercel.app/" className='text-[15px] text-[#EDFFFA] flex items-center'>View Site <img src={arrow} alt="right pointing arrow" className='w-[14.67px] h-[11px] ml-[15px]'/></a></button>
