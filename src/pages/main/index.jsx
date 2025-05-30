@@ -46,14 +46,14 @@ function Index() {
     experience: useRef(null)
   };
 
-  useEffect(() => {
+  /*useEffect(() => {
     // Preloader timeout
     const timer = setTimeout(() => {
       setLoading(false);
     }, 3000);
 
     return () => clearTimeout(timer);
-  }, []);
+  }, []);*/
 
   useEffect(() => {
     if (loading) return;
@@ -84,7 +84,7 @@ function Index() {
     };
   }, [loading]);
 
-  if (loading) return <Preloader />;
+  /*if (loading) return <Preloader />;*/
   
 
   return (
