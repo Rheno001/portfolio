@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Navbar from "../../components/navbar.jsx";
 import Hero from "../../components/hero.jsx";
 import Player from "../../components/player.jsx";
@@ -18,10 +18,23 @@ import osint from "../../assets/osint.png";
 import projects from "../../assets/projects.png";
 import Projects from "../../components/projects.jsx";
 import work from "../../assets/work.png";
-import work1 from "../../assets/tbs.png";
 import Typing from '../../components/typing.jsx'
 
+function Preloader() {
+  return (
+    <div className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-[#0F0F0F] text-white">
+      <div className="flex space-x-4 mb-4">
+        <div className="w-5 h-5 bg-white rounded-full animate-bounce" style={{ animationDelay: '0s' }}></div>
+        <div className="w-5 h-5 bg-white rounded-full animate-bounce" style={{ animationDelay: '1s' }}></div>
+        <div className="w-5 h-5 bg-white rounded-full animate-bounce" style={{ animationDelay: '1.5s' }}></div>
+      </div>
+      <p className="text-[150px]  text-[#54625A] integral-font font-black mt-4 animate-fade-in">Welcome</p>
+    </div>
+  );
+}
+
 function Index() {
+  const [loading, setLoading] = useState(true);
   const sectionRefs = {
     skilled: useRef(null),
     frontend: useRef(null),
@@ -34,22 +47,29 @@ function Index() {
   };
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.remove("translate-y-8", "opacity-0");
-            entry.target.classList.add("translate-y-0", "opacity-100");
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      {
-        threshold: 0.1,
-      }
-    );
+    // Preloader timeout
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 3000);
 
-    // Observe all section refs
+    return () => clearTimeout(timer);
+  }, []);
+
+  useEffect(() => {
+    if (loading) return;
+    
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.remove("translate-y-8", "opacity-0");
+          entry.target.classList.add("translate-y-0", "opacity-100");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.1,
+    });
+
     Object.values(sectionRefs).forEach((ref) => {
       if (ref.current) {
         ref.current.classList.add("translate-y-8", "opacity-0", "transition-all", "duration-1000", "ease-out");
@@ -59,12 +79,13 @@ function Index() {
 
     return () => {
       Object.values(sectionRefs).forEach((ref) => {
-        if (ref.current) {
-          observer.unobserve(ref.current);
-        }
+        if (ref.current) observer.unobserve(ref.current);
       });
     };
-  }, []);
+  }, [loading]);
+
+  if (loading) return <Preloader />;
+  
 
   return (
     <div>
