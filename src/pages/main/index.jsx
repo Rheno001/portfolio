@@ -235,8 +235,8 @@ function Index() {
             alt="Work experience"
             className="mt-[30px] md:mt-[60px]"
           />
-          <div className="flex mx-auto relative md:w-[60%] ml-[-2px] md:m-auto">
-            <div className="flex justify-center items-center h-[536px] my-0 mt-[-100px] md:my-[50px]">
+          <div className="flex mx-auto relative lg:w-[60%] ml-[-2px] md:m-auto">
+            <div className="flex ml-[20px] md:ml-0 justify-center items-center h-[536px] my-0 mt-[-100px] md:my-[50px]">
               <div className="relative w-1 bg-[#54625A] h-[250px] md:h-full rounded">
                 {/* Top knob */}
                 <div className="absolute top-[20%] left-1/2 -translate-x-1/2 w-6 h-6 rounded-md bg-[#edfffa] border-4 border-[#54625A]"></div>
@@ -255,7 +255,7 @@ function Index() {
                     className="w-[70px] md:w-[132px]"
                   />
                 </div>
-                <div className="text-[#3B4542] ml-[25px]">
+                <div className="text-[#3B4542] ml-[12px]">
                   <h3 className="text-[15px] md:text-[30px]">
                     Front End Intern @ NHUB Nigeria
                   </h3>
@@ -276,7 +276,7 @@ function Index() {
                     className="w-[70px] md:w-[132px]"
                   />
                 </div>
-                <div className="text-[#3B4542] ml-[25px]">
+                <div className="text-[#3B4542] ml-[12px]">
                   <h3 className="text-[15px] md:text-[30px]">
                     Web Dev/Auditor @ Triune Built Tech
                   </h3>
