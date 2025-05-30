@@ -133,8 +133,8 @@ function Navbar() {
               Contact
               <span className="absolute bottom-[-4px] left-0 w-0 h-[2px] bg-[#54625A] transition-all duration-300 group-hover:w-full"></span>
             </a>
-            <button className="bg-[#EDFFFA] border-4 rounded-[18px] py-[15px] px-[5px] border-[#54625A] mt-4">
-              <a href="#" className='text-[15px] border-2 rounded-[18px] py-[10px] px-[40px] border-[#54625A]'>Download CV</a>
+            <button className=" bg-[#EDFFFA] border-4 rounded-[18px] py-[12px] px-[3px] border-[#54625A]">
+              <a href="#" className='border-2 rounded-[10px] py-[10px] px-[47px] border-[#54625A]'>Download CV</a>
             </button>
           </div>
         </div>
