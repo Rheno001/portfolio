@@ -65,7 +65,7 @@ function Hero() {
               animation: "scroll 20s linear infinite",
             }}
           >
-            {Array.from({ length: 20 }).map((_, index) => (
+            {Array.from({ length: 30 }).map((_, index) => (
               <img
                 key={index}
                 src={frontend}
