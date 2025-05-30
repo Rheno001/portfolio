@@ -55,13 +55,6 @@ function Index() {
 
     return () => clearTimeout(timer);
   }, []);
-  useEffect(() => {
-    if (loading) {
-      document.body.style.overflow = "hidden"; // Prevent scroll during preloader
-    } else {
-      document.body.style.overflow = "auto"; // Restore scroll after preloader
-    }
-  }, [loading]);
 
   useEffect(() => {
     if (loading) return;
