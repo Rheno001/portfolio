@@ -91,11 +91,11 @@ function Index() {
   return (
     <div>
       <Navbar />
-      <section id="hero">
+      <section id="hero" className="max-w-screen overflow-x-hidden">
         <Hero />
       </section>
 
-      <section id="works" className="py-[30px]">
+      <section id="works" className="py-[30px] ">
         <div className="px-4 sm:px-6 lg:px-17">
           <div ref={sectionRefs.skilled}>
             <img src={skilled} alt="Skilled In" />
