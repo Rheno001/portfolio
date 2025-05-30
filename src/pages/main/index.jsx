@@ -28,7 +28,7 @@ function Preloader() {
         <div className="w-5 h-5 bg-white rounded-full animate-bounce" style={{ animationDelay: '1s' }}></div>
         <div className="w-5 h-5 bg-white rounded-full animate-bounce" style={{ animationDelay: '1.5s' }}></div>
       </div>
-      <p className="text-[80px] md:text-[150px]  text-[#9cada4] integral-font font-black mt-4 animate-fade-in">WELCOME</p>
+      <p className="text-[70px] md:text-[150px] text-[#9cada4] integral-font font-black mt-4 animate-fade-in">WELCOME</p>
     </div>
   );
 }
