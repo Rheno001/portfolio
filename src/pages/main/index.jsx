@@ -18,17 +18,28 @@ import osint from "../../assets/osint.png";
 import projects from "../../assets/projects.png";
 import Projects from "../../components/projects.jsx";
 import work from "../../assets/work.png";
-import Typing from '../../components/typing.jsx'
+import Typing from "../../components/typing.jsx";
 
 function Preloader() {
   return (
     <div className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-[#46504a] text-white scroll-">
+      <p className="text-[70px] md:text-[150px] text-[#9cada4] integral-font font-black mt-4 animate-fade-in">
+        WELCOME
+      </p>
       <div className="flex space-x-4 mb-4">
-        <div className="w-5 h-5 bg-white rounded-full animate-bounce" style={{ animationDelay: '0s' }}></div>
-        <div className="w-5 h-5 bg-white rounded-full animate-bounce" style={{ animationDelay: '1s' }}></div>
-        <div className="w-5 h-5 bg-white rounded-full animate-bounce" style={{ animationDelay: '1.5s' }}></div>
+        <div
+          className="w-5 h-5 bg-white rounded-full animate-bounce"
+          style={{ animationDelay: "0s" }}
+        ></div>
+        <div
+          className="w-5 h-5 bg-white rounded-full animate-bounce"
+          style={{ animationDelay: "1s" }}
+        ></div>
+        <div
+          className="w-5 h-5 bg-white rounded-full animate-bounce"
+          style={{ animationDelay: "1.5s" }}
+        ></div>
       </div>
-      <p className="text-[70px] md:text-[150px] text-[#9cada4] integral-font font-black mt-4 animate-fade-in">WELCOME</p>
     </div>
   );
 }
@@ -43,7 +54,7 @@ function Index() {
     projects: useRef(null),
     about: useRef(null),
     player: useRef(null),
-    experience: useRef(null)
+    experience: useRef(null),
   };
 
   useEffect(() => {
@@ -51,29 +62,37 @@ function Index() {
     const timer = setTimeout(() => {
       setLoading(false);
     }, 3000);
-    
 
     return () => clearTimeout(timer);
   }, []);
 
   useEffect(() => {
     if (loading) return;
-    
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.remove("translate-y-8", "opacity-0");
-          entry.target.classList.add("translate-y-0", "opacity-100");
-          observer.unobserve(entry.target);
-        }
-      });
-    }, {
-      threshold: 0.1,
-    });
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.remove("translate-y-8", "opacity-0");
+            entry.target.classList.add("translate-y-0", "opacity-100");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        threshold: 0.1,
+      }
+    );
 
     Object.values(sectionRefs).forEach((ref) => {
       if (ref.current) {
-        ref.current.classList.add("translate-y-8", "opacity-0", "transition-all", "duration-1000", "ease-out");
+        ref.current.classList.add(
+          "translate-y-8",
+          "opacity-0",
+          "transition-all",
+          "duration-1000",
+          "ease-out"
+        );
         observer.observe(ref.current);
       }
     });
@@ -86,7 +105,6 @@ function Index() {
   }, [loading]);
 
   if (loading) return <Preloader />;
-  
 
   return (
     <div>
@@ -106,7 +124,11 @@ function Index() {
             </p>
             <ul className="flex items-center justify-center mt-[10px] md:mt-[30px] gap-4">
               <li>
-                <img src={html} alt="html logo" className="w-[85px] md:w-auto" />
+                <img
+                  src={html}
+                  alt="html logo"
+                  className="w-[85px] md:w-auto"
+                />
               </li>
               <li>
                 <img src={css} alt="css logo" className="w-[85px] md:w-auto" />
@@ -115,13 +137,25 @@ function Index() {
                 <img src={git} alt="git logo" className="w-[85px] md:w-auto" />
               </li>
               <li>
-                <img src={wp} alt="wordpress logo" className="w-[85px] md:w-auto" />
+                <img
+                  src={wp}
+                  alt="wordpress logo"
+                  className="w-[85px] md:w-auto"
+                />
               </li>
               <li>
-                <img src={vs} alt="vs code logo" className="w-[85px] md:w-auto" />
+                <img
+                  src={vs}
+                  alt="vs code logo"
+                  className="w-[85px] md:w-auto"
+                />
               </li>
               <li>
-                <img src={tw} alt="tailwind logo" className="w-[85px] md:w-auto" />
+                <img
+                  src={tw}
+                  alt="tailwind logo"
+                  className="w-[85px] md:w-auto"
+                />
               </li>
             </ul>
           </div>
@@ -131,7 +165,11 @@ function Index() {
             </p>
             <ul className="flex items-center justify-center mt-[10px] md:mt-[30px] gap-4">
               <li>
-                <img src={osint} alt="html logo" className="w-[60px] md:w-auto" />
+                <img
+                  src={osint}
+                  alt="html logo"
+                  className="w-[60px] md:w-auto"
+                />
               </li>
               <li>
                 <img src={css} alt="css logo" className="w-[60px] md:w-auto" />
@@ -141,10 +179,13 @@ function Index() {
               </li>
             </ul>
           </div>
-          <Typing/>
+          <Typing />
         </div>
 
-        <div ref={sectionRefs.projects} className="px-4 sm:px-6 lg:px-17 py-[30px] mt-[30px] md:mt-[100px]">
+        <div
+          ref={sectionRefs.projects}
+          className="px-4 sm:px-6 lg:px-17 py-[30px] mt-[30px] md:mt-[100px]"
+        >
           <img src={projects} alt="projects" />
           <Projects />
         </div>
@@ -185,7 +226,10 @@ function Index() {
         <Player />
 
         {/*Experience section*/}
-        <section ref={sectionRefs.experience} className="experience h-[320px] md:h-auto px-4 sm:px-6 lg:px-17">
+        <section
+          ref={sectionRefs.experience}
+          className="experience h-[320px] md:h-auto px-4 sm:px-6 lg:px-17"
+        >
           <img
             src={experience}
             alt="Work experience"
@@ -205,7 +249,11 @@ function Index() {
             <div className="ml-[30px]">
               <div className="first flex items-center absolute top-[14%] md:top-[16%]">
                 <div className="bg-[#EDFFFA] rounded-[24px] border-[3px] border-[#3B4542] p-[8px]">
-                  <img src={work} alt="First experience" className="w-[70px] md:w-[132px]"/>
+                  <img
+                    src={work}
+                    alt="First experience"
+                    className="w-[70px] md:w-[132px]"
+                  />
                 </div>
                 <div className="text-[#3B4542] ml-[25px]">
                   <h3 className="text-[15px] md:text-[30px]">
@@ -222,7 +270,11 @@ function Index() {
               </div>
               <div className="second flex items-center absolute top-[43%] md:top-[58%]">
                 <div className="bg-[#EDFFFA] rounded-[24px] border-[3px] border-[#3B4542] p-[8px]">
-                  <img src={work} alt="First experience" className="w-[70px] md:w-[132px]"/>
+                  <img
+                    src={work}
+                    alt="First experience"
+                    className="w-[70px] md:w-[132px]"
+                  />
                 </div>
                 <div className="text-[#3B4542] ml-[25px]">
                   <h3 className="text-[15px] md:text-[30px]">
@@ -241,7 +293,7 @@ function Index() {
           </div>
         </section>
       </section>
-      <Footer />
+      <section id="contact"><Footer/></section>
     </div>
   );
 }

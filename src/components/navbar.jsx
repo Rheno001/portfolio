@@ -25,11 +25,14 @@ function Navbar() {
           <div className="flex justify-between items-center h-20">
             {/* Logo */}
             <div className="flex-shrink-0">
+              <a href="#hero">
               <img 
                 src={logo} 
                 alt="RENO Logo" 
                 className="h-[25px] md:h-12 w-auto cursor-pointer"
               />
+              </a>
+              
             </div>
 
             {/* Navigation Links - Hidden on mobile */}

@@ -3,6 +3,10 @@
 body{
     font-family: 'Nanum Myeongjo', serif;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 @font-face {
   font-family: 'Integral CF Heavy';
   src: url('/fonts/IntegralCF-Heavy.otf') format('opentype');
