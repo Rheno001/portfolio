@@ -20,9 +20,9 @@ import Projects from "../../components/projects.jsx";
 import work from "../../assets/work.png";
 import Typing from '../../components/typing.jsx'
 
-function Preloader() {
+/*function Preloader() {
   return (
-    <div className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-[#46504a] text-white overflow-hidden">
+    <div className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-[#46504a] text-white">
       <div className="flex space-x-4 mb-4">
         <div className="w-5 h-5 bg-white rounded-full animate-bounce" style={{ animationDelay: '0s' }}></div>
         <div className="w-5 h-5 bg-white rounded-full animate-bounce" style={{ animationDelay: '1s' }}></div>
@@ -31,7 +31,7 @@ function Preloader() {
       <p className="text-[50px] md:text-[150px]  text-[#9cada4] integral-font font-black mt-4 animate-fade-in">WELCOME</p>
     </div>
   );
-}
+}*/
 
 function Index() {
   const [loading, setLoading] = useState(true);
