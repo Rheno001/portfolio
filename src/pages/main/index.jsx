@@ -22,30 +22,47 @@ import work1 from "../../assets/tbs.png";
 import Typing from '../../components/typing.jsx'
 
 function Index() {
-  const imageRef = useRef(null);
+  const sectionRefs = {
+    skilled: useRef(null),
+    frontend: useRef(null),
+    cybersecurity: useRef(null),
+    typing: useRef(null),
+    projects: useRef(null),
+    about: useRef(null),
+    player: useRef(null),
+    experience: useRef(null)
+  };
 
   useEffect(() => {
     const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.remove("-translate-y-8", "opacity-0");
-          entry.target.classList.add("translate-y-0", "opacity-100");
-          observer.unobserve(entry.target);
-        }
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.remove("translate-y-8", "opacity-0");
+            entry.target.classList.add("translate-y-0", "opacity-100");
+            observer.unobserve(entry.target);
+          }
+        });
       },
       {
         threshold: 0.1,
       }
     );
 
-    if (imageRef.current) {
-      observer.observe(imageRef.current);
-    }
+    // Observe all section refs
+    Object.values(sectionRefs).forEach((ref) => {
+      if (ref.current) {
+        ref.current.classList.add("translate-y-8", "opacity-0", "transition-all", "duration-1000", "ease-out");
+        observer.observe(ref.current);
+      }
+    });
 
     return () => {
-      if (imageRef.current) {
-        observer.unobserve(imageRef.current);
-      }
+      Object.values(sectionRefs).forEach((ref) => {
+        if (ref.current) {
+          observer.unobserve(ref.current);
+        }
+      });
     };
   }, []);
 
@@ -58,8 +75,10 @@ function Index() {
 
       <section id="works" className="py-[30px]">
         <div className="px-4 sm:px-6 lg:px-17">
-          <img src={skilled} alt="Skilled In" />
-          <div className="frontend">
+          <div ref={sectionRefs.skilled}>
+            <img src={skilled} alt="Skilled In" />
+          </div>
+          <div ref={sectionRefs.frontend} className="frontend">
             <p className="text-[#EDFFFA] text-[20px] md:text-[20px] text-center mt-[30px] md:mt-[40px]">
               Front-End Development Stack
             </p>
@@ -103,19 +122,18 @@ function Index() {
           <Typing/>
         </div>
 
-        <div className="px-4 sm:px-6 lg:px-17 py-[30px] mt-[30px] md:mt-[100px]">
+        <div ref={sectionRefs.projects} className="px-4 sm:px-6 lg:px-17 py-[30px] mt-[30px] md:mt-[100px]">
           <img src={projects} alt="projects" />
           <Projects />
         </div>
       </section>
 
       <section id="about" className="py-[30px]">
-        <div className="px-4 sm:px-6 lg:px-17">
+        <div ref={sectionRefs.about} className="px-4 sm:px-6 lg:px-17">
           <img
-            ref={imageRef}
             src={aboutme}
             alt="About Me"
-            className="-translate-y-8 opacity-0 transition-all w-[80%] mx-auto duration-1000 ease-out"
+            className="w-[80%] my-[20px] mx-auto"
           />
           <img
             src={knowme}
@@ -145,7 +163,7 @@ function Index() {
         <Player />
 
         {/*Experience section*/}
-        <section className="experience h-[320px] md:h-auto px-4 sm:px-6 lg:px-17">
+        <section ref={sectionRefs.experience} className="experience h-[320px] md:h-auto px-4 sm:px-6 lg:px-17">
           <img
             src={experience}
             alt="Work experience"
