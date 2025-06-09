@@ -86,7 +86,7 @@ function Hero() {
       </div>
 
       {/* TYPING TEXT */}
-      <div className="px-6 sm:px-6 lg:px-40 text-[20px] md:text-[30px] text-[#54625A] mt-[30px] font-[Nanum Myeongjo]">
+      <div className="px-6 sm:px-6 lg:px-62 text-[20px] md:text-[30px] text-[#54625A] mt-[30px] font-[Nanum Myeongjo]">
         <Typewriter
           words={["A Front-End Developer with a Structured Mind"]}
           loop={1}

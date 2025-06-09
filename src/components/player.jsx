@@ -1,8 +1,8 @@
 import { useRef, useState } from 'react';
-import song1Img from '../assets/nigga.png';
-import song2Img from '../assets/nigga.png';
-import song3Img from '../assets/nigga.png';
-import song4Img from '../assets/nigga.png';
+import song1Img from '../assets/vacay.png';
+import song2Img from '../assets/jcole.png';
+import song3Img from '../assets/tunechi.png';
+import song4Img from '../assets/tems.png';
 import song5Img from '../assets/nigga.png';
 import albumBg from '../assets/albumbg.png';
 import headphones from '../assets/Headphone.png';
@@ -65,7 +65,7 @@ function Player() {
         <audio ref={audioRefs.song1} src="/Amine-Vacay.mp3" />
         <audio ref={audioRefs.song2} src="/Seyi-Vibez-Pressure.mp3" />
         <audio ref={audioRefs.song3} src="/Let-It-All-Work-Out.mp3" />
-        <audio ref={audioRefs.song4} src="/Seyi-Vibez-Pressure.mp3" />
+        <audio ref={audioRefs.song4} src="/Tems-Me&U.mp3" />
         <audio ref={audioRefs.song5} src="/Seyi-Vibez-Pressure.mp3" />
       </div>
 

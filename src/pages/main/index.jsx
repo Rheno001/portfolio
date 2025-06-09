@@ -204,18 +204,11 @@ function Index() {
             className="mt-[20px] md:mt-[50px]"
           />
           <p className="mt-[15px] md:mt-[25px] text-[15px] md:text-[20px]">
-            I'm Renfred Reuben, a front-end developer with three years of
-            hands-on experience building fast, responsive, and scalable web
-            applications. I specialize in writing clean, maintainable code using
-            modern JavaScript frameworks and libraries like React and Vue. From
-            optimizing performance to handling API integrations, I focus on the
-            technical side of front-end development to create seamless user
-            experiences. <br />
-            Beyond coding, music is my second language. I have a deep
-            appreciation for storytelling in songs, and Odumodublvck's raw
-            energy and lyricism hit differently. Whether I’m debugging a tricky
-            function or vibing to a solid track, there’s always a rhythm to what
-            I do.
+            I'm Renfred Reuben, a front-end developer with three years of hands-on experience crafting fast, responsive, and scalable web applications. I write clean, maintainable code with modern JavaScript frameworks like React and Vue—focused on performance, seamless user experiences, and precise API integrations.
+            <br/>
+            Beyond the code, music fuels my flow. I have a deep appreciation for storytelling in sound. While Odumodublvck’s raw energy charges the atmosphere, it’s J. Cole’s bars that echo my mindset. As he said:
+            “History repeats itself and that’s just how it goes, same way that these rappers always bite each other’s flows.”
+            In both code and music, originality matters. Whether I’m debugging a stubborn bug or vibing to a track that hits deep, I bring rhythm, precision, and intent to everything I do.
           </p>
           <img
             src={topalbums}
@@ -293,7 +286,7 @@ function Index() {
           </div>
         </section>
       </section>
-      <section id="contact"><Footer/></section>
+      <section id="contact"><Footer /></section>
     </div>
   );
 }
