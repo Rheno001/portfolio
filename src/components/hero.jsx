@@ -45,7 +45,7 @@ function Hero() {
             initial={{ x: -200, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 1, delay: 2 }}
-            className="hidden md:block integral-font text-[#54625A] md:text-[12.3rem] lg:text-[247px] font-black relative leading-40 custom-tight mx-auto ml-[-3px]"
+            className="hidden md:block integral-font text-[#54625A] md:text-[12.3rem] lg:text-[247px] font-black relative leading-45 custom-tight mx-auto ml-[-3px]"
           >
             REUBEN
           </motion.h1>
