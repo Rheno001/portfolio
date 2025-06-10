@@ -23,7 +23,7 @@ import Typing from "../../components/typing.jsx";
 function Preloader() {
   return (
     <div className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-[#46504a] text-white scroll-">
-      <p className="text-[70px] md:text-[150px] text-[#9cada4] integral-font font-black mt-4 animate-fade-in">
+      <p className="text-[70px] integral-font md:text-[150px] text-[#9cada4] integral-font font-black mt-4 animate-fade-in">
         WELCOME
       </p>
       <div className="flex space-x-4 mb-4">
