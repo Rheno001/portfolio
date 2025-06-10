@@ -17,7 +17,8 @@ import tw from "../../assets/tw.png";
 import osint from "../../assets/osint.png";
 import projects from "../../assets/projects.png";
 import Projects from "../../components/projects.jsx";
-import work from "../../assets/work.png";
+import work1 from "../../assets/nhub.png";
+import work2 from "../../assets/tbs.png";
 import Typing from "../../components/typing.jsx";
 
 function Preloader() {
@@ -243,7 +244,7 @@ function Index() {
               <div className="first flex items-center absolute top-[14%] md:top-[16%]">
                 <div className="bg-[#EDFFFA] rounded-[24px] border-[3px] border-[#3B4542] p-[8px]">
                   <img
-                    src={work}
+                    src={work1}
                     alt="First experience"
                     className="w-[70px] md:w-[132px]"
                   />
@@ -264,7 +265,7 @@ function Index() {
               <div className="second flex items-center absolute top-[43%] md:top-[58%]">
                 <div className="bg-[#EDFFFA] rounded-[24px] border-[3px] border-[#3B4542] p-[8px]">
                   <img
-                    src={work}
+                    src={work2}
                     alt="First experience"
                     className="w-[70px] md:w-[132px]"
                   />
