@@ -66,7 +66,7 @@ function Navbar() {
             {/* Button */}
             <button className="hidden md:block bg-[#EDFFFA] border-4 rounded-[18px] py-[12px] px-[3px] border-[#54625A]">
               <a
-                href="#"
+                href="https://violet-eyde-40.tiiny.site"
                 className="border-2 rounded-[10px] py-[10px] px-[40px] border-[#54625A]"
               >
                 Download CV

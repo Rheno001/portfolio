@@ -55,10 +55,10 @@ function Player() {
           backgroundPosition: 'center',
         }}
       >
-        <img src={song1Img} alt="Play Song 1" onClick={() => toggleAudio('song1')} className="w-[65px] md:w-[75px] lg:w-[223px] hover:scale-110 transition-all cursor-pointer" />
-        <img src={song2Img} alt="Play Song 2" onClick={() => toggleAudio('song2')} className="w-[65px] md:w-[75px] lg:w-[223px] hover:scale-110 transition-all cursor-pointer" />
-        <img src={song3Img} alt="Play Song 3" onClick={() => toggleAudio('song3')} className="w-[65px] md:w-[75px] lg:w-[223px] hover:scale-110 transition-all cursor-pointer" />
-        <img src={song4Img} alt="Play Song 4" onClick={() => toggleAudio('song4')} className="w-[65px] md:w-[75px] lg:w-[223px] hover:scale-110 transition-all cursor-pointer" />
+        <img src={song1Img} alt="Play Song 1" onClick={() => toggleAudio('song1')} className="w-[65px] md:w-[75px] lg:w-[223px] hover:scale-110 transition-all cursor-pointer p-4 border-2 border-[#54625A]" />
+        <img src={song2Img} alt="Play Song 2" onClick={() => toggleAudio('song2')} className="w-[65px] md:w-[75px] lg:w-[223px] hover:scale-110 transition-all cursor-pointer border-2 border-[#54625A]" />
+        <img src={song3Img} alt="Play Song 3" onClick={() => toggleAudio('song3')} className="w-[65px] md:w-[75px] lg:w-[223px] hover:scale-110 transition-all cursor-pointer border-2 border-[#54625A]" />
+        <img src={song4Img} alt="Play Song 4" onClick={() => toggleAudio('song4')} className="w-[65px] md:w-[75px] lg:w-[223px] hover:scale-110 transition-all cursor-pointer border-2 border-[#54625A]" />
         {/*<img src={song5Img} alt="Play Song 5" onClick={() => toggleAudio('song5')} className="w-[65px] md:w-[75px] lg:w-[223px] hover:scale-110 transition-all cursor-pointer" />*/}
 
         {/* Audio elements */}
