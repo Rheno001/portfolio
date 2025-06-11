@@ -3,6 +3,7 @@ import NFT from '../assets/NFT.png'
 import MIX from '../assets/mixbistro.png'
 import TGM from '../assets/great.png'
 import SAAS from '../assets/saas.png'
+import devongnosis from '../assets/devongnosis.png'
 import arrow from '../assets/rightarrow.png'
 
 function projects() {
@@ -64,6 +65,21 @@ function projects() {
                 </div>
                 <div className='flex items-end'>
                     <button className='flex p-2 items-center justify-center mr-[20px]'><a href="https://saasify-theta.vercel.app/" className='text-[15px] text-[#EDFFFA] flex items-center'>View Site <img src={arrow} alt="right pointing arrow" className='w-[14.67px] h-[11px] ml-[15px]'/></a></button>
+                    <a href="" className='border-[2px] border-[#EDFFFA] p-2 text-[12px] md:text-[15px] text-[#EDFFFA]'>Read Case Study</a>
+                </div>
+            </div>
+        </div>
+         <div className="five">
+            <div className='image bg-[#DDE0DE] p-10'>
+                <img src={devongnosis} alt="Projects one" />
+            </div>
+            <div className='texts flex justify-between mt-[10px]'>
+                <div className='text-[#EDFFFA]'>
+                    <h3 className='text-[20px] lg:text-[45px]'>Devongnosis</h3>
+                    <p className='text-[12px] md:text-[20px]'>Education</p>
+                </div>
+                <div className='flex items-end'>
+                    <button className='flex p-2 items-center justify-center mr-[20px]'><a href="#" className='text-[15px] text-[#EDFFFA] flex items-center'>View Site <img src={arrow} alt="right pointing arrow" className='w-[14.67px] h-[11px] ml-[15px]'/></a></button>
                     <a href="" className='border-[2px] border-[#EDFFFA] p-2 text-[12px] md:text-[15px] text-[#EDFFFA]'>Read Case Study</a>
                 </div>
             </div>
