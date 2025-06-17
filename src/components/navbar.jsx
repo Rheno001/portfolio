@@ -33,6 +33,7 @@ function Navbar() {
                 <img
                   src={logo}
                   alt="RENO Logo"
+                  href="#"
                   className="h-[25px] md:h-12 w-auto cursor-pointer"
                 />
               </a>

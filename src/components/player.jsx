@@ -2,7 +2,7 @@ import { useRef, useState } from 'react';
 import song1Img from '../assets/vacay.png';
 import song2Img from '../assets/jcole.png';
 import song3Img from '../assets/tunechi.png';
-import song4Img from '../assets/tems.png';
+import song4Img from '../assets/energy-drake.png';
 import song5Img from '../assets/nigga.png';
 import albumBg from '../assets/albumbg.png';
 import headphones from '../assets/Headphone.png';
@@ -55,7 +55,7 @@ function Player() {
           backgroundPosition: 'center',
         }}
       >
-        <img src={song1Img} alt="Play Song 1" onClick={() => toggleAudio('song1')} className="w-[65px] md:w-[75px] lg:w-[223px] hover:scale-110 transition-all cursor-pointer p-4 border-2 border-[#54625A]" />
+        <img src={song1Img} alt="Play Song 1" onClick={() => toggleAudio('song1')} className="w-[65px] md:w-[75px] lg:w-[223px] hover:scale-110 transition-all cursor-pointer border-2 border-[#54625A]" />
         <img src={song2Img} alt="Play Song 2" onClick={() => toggleAudio('song2')} className="w-[65px] md:w-[75px] lg:w-[223px] hover:scale-110 transition-all cursor-pointer border-2 border-[#54625A]" />
         <img src={song3Img} alt="Play Song 3" onClick={() => toggleAudio('song3')} className="w-[65px] md:w-[75px] lg:w-[223px] hover:scale-110 transition-all cursor-pointer border-2 border-[#54625A]" />
         <img src={song4Img} alt="Play Song 4" onClick={() => toggleAudio('song4')} className="w-[65px] md:w-[75px] lg:w-[223px] hover:scale-110 transition-all cursor-pointer border-2 border-[#54625A]" />
@@ -63,10 +63,10 @@ function Player() {
 
         {/* Audio elements */}
         <audio ref={audioRefs.song1} src="/Amine-Vacay.mp3" />
-        <audio ref={audioRefs.song2} src="/Seyi-Vibez-Pressure.mp3" />
-        <audio ref={audioRefs.song3} src="/Let-It-All-Work-Out.mp3" />
-        <audio ref={audioRefs.song4} src="/Tems-Me&U.mp3" />
-        <audio ref={audioRefs.song5} src="/Seyi-Vibez-Pressure.mp3" />
+        <audio ref={audioRefs.song2} src="/SeyiVibez-Pressure.mp3" />
+        <audio ref={audioRefs.song3} src="/LilWayne-(Let-It-All-Work-Out).mp3" />
+        <audio ref={audioRefs.song4} src="/Drake-Enery.mp3" />
+        <audio ref={audioRefs.song5} src="/SeyiVibez-Pressure.mp3" />
       </div>
 
       <div className="px-4 sm:px-6 lg:px-17 flex text-left text-[#54625A] mt-4 text-[3vw] font-normal">
