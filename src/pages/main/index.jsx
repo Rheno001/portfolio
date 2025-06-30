@@ -242,11 +242,11 @@ function Index() {
 
             <div className="ml-[30px]">
               <div className="first flex items-center absolute top-[14%] md:top-[16%]">
-                <div className="bg-[#EDFFFA] rounded-[24px] border-[3px] border-[#3B4542] p-[8px]">
+                <div className="bg-[#EDFFFA] rounded-[24px] border-[3px] border-[#3B4542] p-[8px] w-[70px] h-[100px] md:w-[132px]">
                   <img
                     src={work1}
                     alt="First experience"
-                    className="w-[70px] md:w-[132px]"
+                    className=""
                   />
                 </div>
                 <div className="text-[#3B4542] ml-[12px]">
@@ -263,11 +263,11 @@ function Index() {
                 </div>
               </div>
               <div className="second flex items-center absolute top-[43%] md:top-[58%]">
-                <div className="bg-[#EDFFFA] rounded-[24px] border-[3px] border-[#3B4542] p-[8px]">
+                <div className="bg-[#EDFFFA] rounded-[24px] border-[3px] border-[#3B4542] p-[8px] w-[70px] h-[100px] md:w-[132px]">
                   <img
                     src={work2}
                     alt="First experience"
-                    className="w-[70px] md:w-[132px]"
+                    className=""
                   />
                 </div>
                 <div className="text-[#3B4542] ml-[12px]">
